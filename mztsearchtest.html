@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>New search</title>
+
+
+	<!-- build:css css/main.min.css -->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/vhsearch.css">
+	<!-- endbuild -->
+</head>
+
+<body>
+
+	<div id="header__search">
+		<div id="main__search">
+			<div class="search__body">
+				<div class="search__field destination">
+					<label for="toogle__multiple__select">
+						Destinations in Greece
+					</label>
+					<button id="toogle__multiple__select" class="search__button">
+						<span>All resorts</span> 
+						<i>
+							<img src="images/bottom__arrow.png" alt="">
+						</i>
+					</button>
+					<div class="destination__multiple__select">
+						<ul class="list__resorts">
+							<!--<li>
+								<input type="checkbox" value="lorem" class="custom__checkbox" onchange="">
+									<a href="#">Agia Triada</a>
+							</li>-->
+						</ul>
+					</div> 
+				</div>
+
+				<div class="search__field chekin">
+					<label for="datepicker">
+						Chek-in date
+					</label>
+					<i>
+						<img src="images/calendar__icon.png" alt="">
+					</i>
+					<input type="text" id="datepicker" class="search__button">
+				</div>
+				<div class="search__field range">
+					<label for="amount">
+						How long:
+					</label>
+					<input type="text" id="amount" readonly>
+					<div id="slider-range" class="search__button"></div>
+				</div>
+				<div class="search__field adults">
+					<label for="spinner__adults">
+						Adults
+					</label>
+					<input id="spinner__adults" value="1" name="value" class="search__button">
+				</div>
+				<div class="search__field children">
+					<label for="spinner__children">
+						Children
+					</label>
+					<input id="spinner__children" value="0" name="value" class="search__button" onchange="addFields()">
+				</div>
+				<div class="button__submit">
+					<button class="search__button">Search</button>
+				</div>
+			</div>
+			<div class="container__childrens__age">
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="hotels__search">
+			<div class="search__body">
+				<div class="search__field destination">
+					<label for="toogle__multiple__select">
+						Destinations in Greece
+					</label>
+					<button id="toogle__multiple__select__hotels" class="search__button">
+						<span>All resorts</span> 
+						<i>
+							<img src="images/bottom__arrow.png" alt="">
+						</i>
+					</button>
+					<div class="destination__multiple__select__hotels">
+						<ul class="list__resorts">
+							<!--<li>
+								<input type="checkbox" value="lorem" class="custom__checkbox" onchange="">
+									<a href="#">Agia Triada</a>
+							</li>-->
+						</ul>
+					</div> 
+				</div>
+
+				<div class="search__field chekin">
+					<label for="datepicker__hotels">
+						Chek-in date
+					</label>
+					<i>
+						<img src="images/calendar__icon.png" alt="">
+					</i>
+					<input type="text" id="datepicker__hotels" class="search__button">
+				</div>
+				<div class="search__field range">
+					<label for="amount__hotels">
+						How long:
+					</label>
+					<input type="text" id="amount__hotels" readonly>
+					<div id="slider-range__hotels" class="search__button"></div>
+				</div>
+				<div class="search__field adults">
+					<label for="spinner__adults__hotels">
+						Adults
+					</label>
+					<input id="spinner__adults__hotels" value="1" name="value" class="search__button">
+				</div>
+				<div class="search__field children__hotels">
+					<label for="spinner__children__hotels">
+						Children
+					</label>
+					<input id="spinner__children__hotels" value="0" name="value" class="search__button" onchange="addFieldsHotels()">
+				</div>
+				<div class="button__submit">
+					<button class="search__button__hotels">Search</button>
+				</div>
+			</div>
+			<div class="container__childrens__age__hotels">
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="flights__search">
+			<div class="search__body">
+				<div class="search__field departure__dates">
+					<div class="departure__from">
+						<label for="from">
+							From
+						</label>
+						<button id="toogle__departure__from" class="search__button">
+							<span>Departure city</span> 
+							<i>
+								<img src="images/bottom__arrow.png" alt="">
+							</i>
+						</button>
+					<div class="departure__city__select">
+						<ul class="list__resorts">
+							<li>
+								<a href="#">
+									Moscow, Lorem Ipsum (SDS)	
+								</a>
+							</li>
+						</ul>
+					</div> 
+					</div>
+					<div class="departure__to">
+						<label for="To">
+							To
+						</label>
+						<button id="toogle__departure__to" class="search__button">
+							<span>Arrival city</span> 
+							<i>
+								<img src="images/bottom__arrow.png" alt="">
+							</i>
+						</button>
+						<div class="arrival__city__select">
+							<ul class="list__resorts">
+								<li>
+									<a href="#">
+										Moscow, Lorem Ipsum (SDS)	
+									</a>
+								</li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="search__field date__in">
+					<div class="departure__date">
+						<label for="departure__date">
+							Departure date
+						</label>
+						<i>
+							<img src="images/calendar__icon.png" alt="">
+						</i>
+						<input type="text" id="departure__date" class="search__button">
+					</div>
+				</div>
+				<div class="search__field date__out">
+					<div class="return__date">
+						<label for="return__date">
+							Return date
+						</label>
+						<i>
+							<img src="images/calendar__icon.png" alt="">
+						</i>
+						<input type="checkbox" class="custom__checkbox activate__return__date" onchange="$(this).parent().find('.box .is__checked').toggleClass('active')">
+						<input type="text" id="return__date" class="search__button">
+					</div>
+				</div>
+				<div class="search__field adults">
+					<label for="spinner__adults__flights">
+						Adults
+					</label>
+					<input id="spinner__adults__flights" value="1" name="value" class="search__button">
+				</div>
+				<div class="search__field children children__flights">
+					<label for="spinner__children__flights">
+						Children
+					</label>
+					<input id="spinner__children__flights" value="0" name="value" class="search__button" onchange="addFieldsFlights()">
+				</div>
+				<div class="button__submit">
+					<button class="search__button">Search</button>
+				</div>
+			</div>
+			<div class="container__childrens__age__flights">
+				<div class="clear"></div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<ul class="search__tabs">
+			<li class="active filter__tours">
+				<a href="#">
+					<i>
+						<img src="images/tours__icon.png" alt="">
+					</i>
+					Tours
+				</a>
+			</li>
+			<li class="filter__hotels">
+				<a href="#">
+					<i>
+						<img src="images/hotels__icon.png" alt="">
+					</i>
+					Hotels
+				</a>
+			</li>
+			<li  class="filter__flights">
+				<a href="#">
+					<i>
+						<img src="images/flight__icon.png" alt="">
+					</i>
+					Flights
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- build:js js/main.min.js -->
+	<!--Js файлы, подключенные между этими тегами скомпилируются в файл main.min.js-->
+	<script src="js/vhsearch.js"></script>
+	<!-- endbuild -->
+
+</body>
+
+</html>

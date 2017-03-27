@@ -1,0 +1,442 @@
+#header__search {
+  position: relative; 
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  #header__search .search__button {
+    cursor: pointer; }
+  #header__search #hotels__search, #header__search #flights__search {
+    display: none; }
+  #header__search #main__search, #header__search #hotels__search, #header__search #flights__search {
+    width: 1060px;
+    min-height: 90px;
+    background-color: #1976d2;
+    color: #fff; }
+    #header__search #main__search .container__childrens__age,
+    #header__search #main__search .container__childrens__age__hotels,
+    #header__search #main__search .container__childrens__age__flights, #header__search #hotels__search .container__childrens__age,
+    #header__search #hotels__search .container__childrens__age__hotels,
+    #header__search #hotels__search .container__childrens__age__flights, #header__search #flights__search .container__childrens__age,
+    #header__search #flights__search .container__childrens__age__hotels,
+    #header__search #flights__search .container__childrens__age__flights {
+      width: 100%;
+      padding-left: 40px; }
+      #header__search #main__search .container__childrens__age .child__age__div,
+      #header__search #main__search .container__childrens__age__hotels .child__age__div,
+      #header__search #main__search .container__childrens__age__flights .child__age__div, #header__search #hotels__search .container__childrens__age .child__age__div,
+      #header__search #hotels__search .container__childrens__age__hotels .child__age__div,
+      #header__search #hotels__search .container__childrens__age__flights .child__age__div, #header__search #flights__search .container__childrens__age .child__age__div,
+      #header__search #flights__search .container__childrens__age__hotels .child__age__div,
+      #header__search #flights__search .container__childrens__age__flights .child__age__div {
+        width: 100px;
+        margin-bottom: 15px;
+        display: inline-block; }
+        #header__search #main__search .container__childrens__age .child__age__div input,
+        #header__search #main__search .container__childrens__age__hotels .child__age__div input,
+        #header__search #main__search .container__childrens__age__flights .child__age__div input, #header__search #hotels__search .container__childrens__age .child__age__div input,
+        #header__search #hotels__search .container__childrens__age__hotels .child__age__div input,
+        #header__search #hotels__search .container__childrens__age__flights .child__age__div input, #header__search #flights__search .container__childrens__age .child__age__div input,
+        #header__search #flights__search .container__childrens__age__hotels .child__age__div input,
+        #header__search #flights__search .container__childrens__age__flights .child__age__div input {
+          margin-top: 5px;
+          border-radius: 4px;
+          border: 1px solid #666;
+          height: 19px;
+          width: 38px;
+          font-size: 1rem;
+          padding-left: 10px; }
+    #header__search #main__search .search__body, #header__search #hotels__search .search__body, #header__search #flights__search .search__body {
+      width: 100%;
+      height: 90px; }
+      #header__search #main__search .search__body .search__field, #header__search #main__search .search__body .button__submit, #header__search #hotels__search .search__body .search__field, #header__search #hotels__search .search__body .button__submit, #header__search #flights__search .search__body .search__field, #header__search #flights__search .search__body .button__submit {
+        padding-top: 20px;
+        padding-left: 40px;
+        float: left;
+        position: relative; }
+      #header__search #main__search .search__body .destination, #header__search #hotels__search .search__body .destination, #header__search #flights__search .search__body .destination {
+        width: 165px; }
+        #header__search #main__search .search__body .destination #toogle__multiple__select, #header__search #main__search .search__body .destination #toogle__multiple__select__hotels, #header__search #hotels__search .search__body .destination #toogle__multiple__select, #header__search #hotels__search .search__body .destination #toogle__multiple__select__hotels, #header__search #flights__search .search__body .destination #toogle__multiple__select, #header__search #flights__search .search__body .destination #toogle__multiple__select__hotels {
+          background: #fff;
+          font-weight: 700;
+          width: 163px;
+          height: 35px;
+          text-align: left;
+          padding-left: 20px;
+          margin-top: 5px;
+          border: 1px solid #666666;
+          border-radius: 3px;
+          position: relative; }
+          #header__search #main__search .search__body .destination #toogle__multiple__select i, #header__search #main__search .search__body .destination #toogle__multiple__select__hotels i, #header__search #hotels__search .search__body .destination #toogle__multiple__select i, #header__search #hotels__search .search__body .destination #toogle__multiple__select__hotels i, #header__search #flights__search .search__body .destination #toogle__multiple__select i, #header__search #flights__search .search__body .destination #toogle__multiple__select__hotels i {
+            position: absolute;
+            right: 15px;
+            top: 55%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+            #header__search #main__search .search__body .destination #toogle__multiple__select i img, #header__search #main__search .search__body .destination #toogle__multiple__select__hotels i img, #header__search #hotels__search .search__body .destination #toogle__multiple__select i img, #header__search #hotels__search .search__body .destination #toogle__multiple__select__hotels i img, #header__search #flights__search .search__body .destination #toogle__multiple__select i img, #header__search #flights__search .search__body .destination #toogle__multiple__select__hotels i img {
+              width: 16px;
+              -webkit-transition: all .1s;
+              transition: all .1s; }
+              #header__search #main__search .search__body .destination #toogle__multiple__select i img.active, #header__search #main__search .search__body .destination #toogle__multiple__select__hotels i img.active, #header__search #hotels__search .search__body .destination #toogle__multiple__select i img.active, #header__search #hotels__search .search__body .destination #toogle__multiple__select__hotels i img.active, #header__search #flights__search .search__body .destination #toogle__multiple__select i img.active, #header__search #flights__search .search__body .destination #toogle__multiple__select__hotels i img.active {
+                -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg); }
+        #header__search #main__search .search__body .destination .destination__multiple__select,
+        #header__search #main__search .search__body .destination .destination__multiple__select__hotels, #header__search #hotels__search .search__body .destination .destination__multiple__select,
+        #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels, #header__search #flights__search .search__body .destination .destination__multiple__select,
+        #header__search #flights__search .search__body .destination .destination__multiple__select__hotels {
+          display: none;
+          outline: 0;
+          position: absolute;
+          top: 90px;
+          width: 1000px;
+          -webkit-transition: all .5s;
+          transition: all .5s;
+          z-index: 1;
+          background-color: #fff;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+          #header__search #main__search .search__body .destination .destination__multiple__select.active,
+          #header__search #main__search .search__body .destination .destination__multiple__select__hotels.active, #header__search #hotels__search .search__body .destination .destination__multiple__select.active,
+          #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels.active, #header__search #flights__search .search__body .destination .destination__multiple__select.active,
+          #header__search #flights__search .search__body .destination .destination__multiple__select__hotels.active {
+            display: block; }
+          #header__search #main__search .search__body .destination .destination__multiple__select:before,
+          #header__search #main__search .search__body .destination .destination__multiple__select__hotels:before, #header__search #hotels__search .search__body .destination .destination__multiple__select:before,
+          #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels:before, #header__search #flights__search .search__body .destination .destination__multiple__select:before,
+          #header__search #flights__search .search__body .destination .destination__multiple__select__hotels:before {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            position: absolute;
+            top: -8px;
+            left: 40px;
+            outline: 0; }
+          #header__search #main__search .search__body .destination .destination__multiple__select ul,
+          #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul, #header__search #hotels__search .search__body .destination .destination__multiple__select ul,
+          #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul, #header__search #flights__search .search__body .destination .destination__multiple__select ul,
+          #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul {
+            width: auto;
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #000;
+            display: inline-block;
+            -webkit-column-count: 5;
+               -moz-column-count: 5;
+                    column-count: 5; }
+            #header__search #main__search .search__body .destination .destination__multiple__select ul input,
+            #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul input, #header__search #hotels__search .search__body .destination .destination__multiple__select ul input,
+            #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul input, #header__search #flights__search .search__body .destination .destination__multiple__select ul input,
+            #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul input {
+              width: 0;
+              height: 0;
+              position: relative;
+              cursor: pointer;
+              z-index: 10;
+              -webkit-transform: scale(0);
+                      transform: scale(0); }
+              #header__search #main__search .search__body .destination .destination__multiple__select ul input:before,
+              #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul input:before, #header__search #hotels__search .search__body .destination .destination__multiple__select ul input:before,
+              #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul input:before, #header__search #flights__search .search__body .destination .destination__multiple__select ul input:before,
+              #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul input:before {
+                content: '';
+                display: block;
+                background-color: #fff;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #666;
+                position: absolute;
+                top: -15px;
+                left: -20px;
+                cursor: pointer;
+                z-index: 99; }
+            #header__search #main__search .search__body .destination .destination__multiple__select ul .box,
+            #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul .box, #header__search #hotels__search .search__body .destination .destination__multiple__select ul .box,
+            #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul .box, #header__search #flights__search .search__body .destination .destination__multiple__select ul .box,
+            #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul .box {
+              position: absolute;
+              cursor: pointer;
+              width: 15px;
+              height: 15px;
+              top: 4px;
+              left: 0;
+              border: 1px solid #666; }
+              #header__search #main__search .search__body .destination .destination__multiple__select ul .box .is__checked,
+              #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul .box .is__checked, #header__search #hotels__search .search__body .destination .destination__multiple__select ul .box .is__checked,
+              #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul .box .is__checked, #header__search #flights__search .search__body .destination .destination__multiple__select ul .box .is__checked,
+              #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul .box .is__checked {
+                display: block;
+                z-index: 10000;
+                width: 8px;
+                height: 14px;
+                position: absolute;
+                top: -3px;
+                left: 3px;
+                border-bottom: 2px solid #1976d2;
+                border-right: 2px solid #1976d2;
+                -webkit-transition: all .2s;
+                transition: all .2s;
+                opacity: 0; }
+                #header__search #main__search .search__body .destination .destination__multiple__select ul .box .is__checked.active,
+                #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul .box .is__checked.active, #header__search #hotels__search .search__body .destination .destination__multiple__select ul .box .is__checked.active,
+                #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul .box .is__checked.active, #header__search #flights__search .search__body .destination .destination__multiple__select ul .box .is__checked.active,
+                #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul .box .is__checked.active {
+                  -webkit-transform: rotate(45deg);
+                          transform: rotate(45deg);
+                  opacity: 1; }
+            #header__search #main__search .search__body .destination .destination__multiple__select ul li,
+            #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul li, #header__search #hotels__search .search__body .destination .destination__multiple__select ul li,
+            #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul li, #header__search #flights__search .search__body .destination .destination__multiple__select ul li,
+            #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul li {
+              display: block;
+              position: relative;
+              z-index: 10;
+              line-height: 1.7;
+              width: 150px;
+              padding-left: 17px; }
+              #header__search #main__search .search__body .destination .destination__multiple__select ul li a,
+              #header__search #main__search .search__body .destination .destination__multiple__select__hotels ul li a, #header__search #hotels__search .search__body .destination .destination__multiple__select ul li a,
+              #header__search #hotels__search .search__body .destination .destination__multiple__select__hotels ul li a, #header__search #flights__search .search__body .destination .destination__multiple__select ul li a,
+              #header__search #flights__search .search__body .destination .destination__multiple__select__hotels ul li a {
+                color: inherit;
+                text-decoration: none; }
+      #header__search #main__search .search__body .chekin, #header__search #hotels__search .search__body .chekin, #header__search #flights__search .search__body .chekin {
+        width: 140px; }
+        #header__search #main__search .search__body .chekin i, #header__search #hotels__search .search__body .chekin i, #header__search #flights__search .search__body .chekin i {
+          position: absolute;
+          right: -28px;
+          top: 53px; }
+          #header__search #main__search .search__body .chekin i img, #header__search #hotels__search .search__body .chekin i img, #header__search #flights__search .search__body .chekin i img {
+            width: 16px; }
+        #header__search #main__search .search__body .chekin #datepicker, #header__search #main__search .search__body .chekin #datepicker__hotels, #header__search #hotels__search .search__body .chekin #datepicker, #header__search #hotels__search .search__body .chekin #datepicker__hotels, #header__search #flights__search .search__body .chekin #datepicker, #header__search #flights__search .search__body .chekin #datepicker__hotels {
+          margin-top: 5.5px;
+          height: 30px;
+          border: 1px solid #666666;
+          border-radius: 3px;
+          padding-left: 20px;
+          width: 163px;
+          font-weight: 700; }
+      #header__search #main__search .search__body .range, #header__search #hotels__search .search__body .range, #header__search #flights__search .search__body .range {
+        width: 200px;
+        margin-left: 40px; }
+        #header__search #main__search .search__body .range #amount, #header__search #main__search .search__body .range #amount__hotels, #header__search #hotels__search .search__body .range #amount, #header__search #hotels__search .search__body .range #amount__hotels, #header__search #flights__search .search__body .range #amount, #header__search #flights__search .search__body .range #amount__hotels {
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          background-color: transparent;
+          border: none;
+          width: 100px; }
+        #header__search #main__search .search__body .range #slider-range, #header__search #main__search .search__body .range #slider-range__hotels, #header__search #hotels__search .search__body .range #slider-range, #header__search #hotels__search .search__body .range #slider-range__hotels, #header__search #flights__search .search__body .range #slider-range, #header__search #flights__search .search__body .range #slider-range__hotels {
+          margin-top: 14px;
+          width: 180px;
+          height: 9px; }
+          #header__search #main__search .search__body .range #slider-range .ui-slider-range, #header__search #main__search .search__body .range #slider-range__hotels .ui-slider-range, #header__search #hotels__search .search__body .range #slider-range .ui-slider-range, #header__search #hotels__search .search__body .range #slider-range__hotels .ui-slider-range, #header__search #flights__search .search__body .range #slider-range .ui-slider-range, #header__search #flights__search .search__body .range #slider-range__hotels .ui-slider-range {
+            background-color: #c90404; }
+          #header__search #main__search .search__body .range #slider-range .ui-slider-handle, #header__search #main__search .search__body .range #slider-range__hotels .ui-slider-handle, #header__search #hotels__search .search__body .range #slider-range .ui-slider-handle, #header__search #hotels__search .search__body .range #slider-range__hotels .ui-slider-handle, #header__search #flights__search .search__body .range #slider-range .ui-slider-handle, #header__search #flights__search .search__body .range #slider-range__hotels .ui-slider-handle {
+            border-radius: 50%;
+            cursor: pointer;
+            top: -.4rem; }
+      #header__search #main__search .search__body .adults, #header__search #main__search .search__body .children, #header__search #main__search .search__body .children__hotels, #header__search #hotels__search .search__body .adults, #header__search #hotels__search .search__body .children, #header__search #hotels__search .search__body .children__hotels, #header__search #flights__search .search__body .adults, #header__search #flights__search .search__body .children, #header__search #flights__search .search__body .children__hotels {
+        width: 90px;
+        padding-left: 10px; }
+        #header__search #main__search .search__body .adults .ui-spinner, #header__search #main__search .search__body .children .ui-spinner, #header__search #main__search .search__body .children__hotels .ui-spinner, #header__search #hotels__search .search__body .adults .ui-spinner, #header__search #hotels__search .search__body .children .ui-spinner, #header__search #hotels__search .search__body .children__hotels .ui-spinner, #header__search #flights__search .search__body .adults .ui-spinner, #header__search #flights__search .search__body .children .ui-spinner, #header__search #flights__search .search__body .children__hotels .ui-spinner {
+          margin-top: 5px; }
+        #header__search #main__search .search__body .adults input, #header__search #main__search .search__body .children input, #header__search #main__search .search__body .children__hotels input, #header__search #hotels__search .search__body .adults input, #header__search #hotels__search .search__body .children input, #header__search #hotels__search .search__body .children__hotels input, #header__search #flights__search .search__body .adults input, #header__search #flights__search .search__body .children input, #header__search #flights__search .search__body .children__hotels input {
+          width: 50px; }
+      #header__search #main__search .search__body .button__submit button, #header__search #main__search .search__body .button__submit__hotels button, #header__search #hotels__search .search__body .button__submit button, #header__search #hotels__search .search__body .button__submit__hotels button, #header__search #flights__search .search__body .button__submit button, #header__search #flights__search .search__body .button__submit__hotels button {
+        width: 92px;
+        height: 34px;
+        cursor: pointer;
+        margin-top: 22px;
+        z-index: 100;
+        background-color: #7FCA00;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 4px; }
+  #header__search #flights__search .departure__from, #header__search #flights__search .departure__to {
+    width: 180px;
+    display: inline-block;
+    position: relative; }
+    #header__search #flights__search .departure__from #toogle__departure__from,
+    #header__search #flights__search .departure__from #toogle__departure__to, #header__search #flights__search .departure__to #toogle__departure__from,
+    #header__search #flights__search .departure__to #toogle__departure__to {
+      background: #fff;
+      font-weight: 700;
+      width: 163px;
+      height: 35px;
+      text-align: left;
+      padding-left: 20px;
+      margin-top: 5px;
+      border: 1px solid #666666;
+      border-radius: 3px;
+      position: relative; }
+      #header__search #flights__search .departure__from #toogle__departure__from span,
+      #header__search #flights__search .departure__from #toogle__departure__to span, #header__search #flights__search .departure__to #toogle__departure__from span,
+      #header__search #flights__search .departure__to #toogle__departure__to span {
+        width: 105px;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        text-overflow: ellipsis; }
+      #header__search #flights__search .departure__from #toogle__departure__from i,
+      #header__search #flights__search .departure__from #toogle__departure__to i, #header__search #flights__search .departure__to #toogle__departure__from i,
+      #header__search #flights__search .departure__to #toogle__departure__to i {
+        position: absolute;
+        right: 15px;
+        top: 55%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+        #header__search #flights__search .departure__from #toogle__departure__from i img,
+        #header__search #flights__search .departure__from #toogle__departure__to i img, #header__search #flights__search .departure__to #toogle__departure__from i img,
+        #header__search #flights__search .departure__to #toogle__departure__to i img {
+          width: 16px;
+          -webkit-transition: all .1s;
+          transition: all .1s; }
+          #header__search #flights__search .departure__from #toogle__departure__from i img.active,
+          #header__search #flights__search .departure__from #toogle__departure__to i img.active, #header__search #flights__search .departure__to #toogle__departure__from i img.active,
+          #header__search #flights__search .departure__to #toogle__departure__to i img.active {
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+    #header__search #flights__search .departure__from .departure__city__select, #header__search #flights__search .departure__from .arrival__city__select, #header__search #flights__search .departure__to .departure__city__select, #header__search #flights__search .departure__to .arrival__city__select {
+      width: 260px;
+      height: 400px;
+      background-color: #fff;
+      position: absolute;
+      z-index: 10;
+      left: -40px;
+      top: 75px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      display: none; }
+      #header__search #flights__search .departure__from .departure__city__select.active, #header__search #flights__search .departure__from .arrival__city__select.active, #header__search #flights__search .departure__to .departure__city__select.active, #header__search #flights__search .departure__to .arrival__city__select.active {
+        display: block; }
+      #header__search #flights__search .departure__from .departure__city__select:before, #header__search #flights__search .departure__from .arrival__city__select:before, #header__search #flights__search .departure__to .departure__city__select:before, #header__search #flights__search .departure__to .arrival__city__select:before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 25px;
+        top: -1px;
+        z-index: -1;
+        left: 50%;
+        background-color: #fff;
+        position: absolute;
+        -webkit-transform: rotate(45deg) translateX(-50%);
+                transform: rotate(45deg) translateX(-50%); }
+      #header__search #flights__search .departure__from .departure__city__select ul, #header__search #flights__search .departure__from .arrival__city__select ul, #header__search #flights__search .departure__to .departure__city__select ul, #header__search #flights__search .departure__to .arrival__city__select ul {
+        padding-left: 0;
+        padding-top: 10px;
+        max-height: 97%;
+        list-style: none;
+        position: relative;
+        top: -16px;
+        overflow: auto; }
+        #header__search #flights__search .departure__from .departure__city__select ul::-webkit-scrollbar-track, #header__search #flights__search .departure__from .arrival__city__select ul::-webkit-scrollbar-track, #header__search #flights__search .departure__to .departure__city__select ul::-webkit-scrollbar-track, #header__search #flights__search .departure__to .arrival__city__select ul::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          background-color: #D3D3D3; }
+        #header__search #flights__search .departure__from .departure__city__select ul::-webkit-scrollbar, #header__search #flights__search .departure__from .arrival__city__select ul::-webkit-scrollbar, #header__search #flights__search .departure__to .departure__city__select ul::-webkit-scrollbar, #header__search #flights__search .departure__to .arrival__city__select ul::-webkit-scrollbar {
+          width: 8px;
+          background-color: #D3D3D3; }
+        #header__search #flights__search .departure__from .departure__city__select ul::-webkit-scrollbar-thumb, #header__search #flights__search .departure__from .arrival__city__select ul::-webkit-scrollbar-thumb, #header__search #flights__search .departure__to .departure__city__select ul::-webkit-scrollbar-thumb, #header__search #flights__search .departure__to .arrival__city__select ul::-webkit-scrollbar-thumb {
+          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          background-color: #666; }
+        #header__search #flights__search .departure__from .departure__city__select ul li, #header__search #flights__search .departure__from .arrival__city__select ul li, #header__search #flights__search .departure__to .departure__city__select ul li, #header__search #flights__search .departure__to .arrival__city__select ul li {
+          line-height: 2;
+          padding-left: 10px; }
+          #header__search #flights__search .departure__from .departure__city__select ul li:hover, #header__search #flights__search .departure__from .arrival__city__select ul li:hover, #header__search #flights__search .departure__to .departure__city__select ul li:hover, #header__search #flights__search .departure__to .arrival__city__select ul li:hover {
+            background-color: #D3D3D3; }
+          #header__search #flights__search .departure__from .departure__city__select ul li a, #header__search #flights__search .departure__from .arrival__city__select ul li a, #header__search #flights__search .departure__to .departure__city__select ul li a, #header__search #flights__search .departure__to .arrival__city__select ul li a {
+            color: #000;
+            text-decoration: none;
+            width: 100%;
+            height: 100%; }
+  #header__search #flights__search .date__in, #header__search #flights__search .date__out {
+    width: 130px;
+    padding-left: 5px !important; }
+    #header__search #flights__search .date__in .departure__date, #header__search #flights__search .date__in .return__date, #header__search #flights__search .date__out .departure__date, #header__search #flights__search .date__out .return__date {
+      width: 130px; }
+      #header__search #flights__search .date__in .departure__date i, #header__search #flights__search .date__in .return__date i, #header__search #flights__search .date__out .departure__date i, #header__search #flights__search .date__out .return__date i {
+        position: absolute;
+        right: 18px;
+        top: 53px; }
+        #header__search #flights__search .date__in .departure__date i img, #header__search #flights__search .date__in .return__date i img, #header__search #flights__search .date__out .departure__date i img, #header__search #flights__search .date__out .return__date i img {
+          width: 16px; }
+      #header__search #flights__search .date__in .departure__date #departure__date, #header__search #flights__search .date__in .departure__date #return__date, #header__search #flights__search .date__in .return__date #departure__date, #header__search #flights__search .date__in .return__date #return__date, #header__search #flights__search .date__out .departure__date #departure__date, #header__search #flights__search .date__out .departure__date #return__date, #header__search #flights__search .date__out .return__date #departure__date, #header__search #flights__search .date__out .return__date #return__date {
+        margin-top: 5.5px;
+        height: 30px;
+        border: 1px solid #666666;
+        border-radius: 3px;
+        padding-left: 20px;
+        width: 100px;
+        font-weight: 700; }
+    #header__search #flights__search .date__in .return__date label, #header__search #flights__search .date__out .return__date label {
+      width: 200px;
+      display: block; }
+    #header__search #flights__search .date__in .return__date .custom__checkbox, #header__search #flights__search .date__out .return__date .custom__checkbox {
+      position: absolute;
+      top: 50px; }
+    #header__search #flights__search .date__in .return__date #return__date, #header__search #flights__search .date__out .return__date #return__date {
+      margin-left: 30px; }
+    #header__search #flights__search .date__in .return__date i, #header__search #flights__search .date__out .return__date i {
+      right: -10px; }
+    #header__search #flights__search .date__in .return__date .box, #header__search #flights__search .date__out .return__date .box {
+      position: absolute;
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      top: 44px;
+      left: 5px;
+      border: 1px solid #666;
+      background-color: #fff; }
+      #header__search #flights__search .date__in .return__date .box .is__checked, #header__search #flights__search .date__out .return__date .box .is__checked {
+        display: block;
+        z-index: 10000;
+        width: 9px;
+        height: 18px;
+        position: absolute;
+        top: 2px;
+        left: 11px;
+        border-bottom: 2px solid #1976d2;
+        border-right: 2px solid #1976d2;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        opacity: 0; }
+        #header__search #flights__search .date__in .return__date .box .is__checked.active, #header__search #flights__search .date__out .return__date .box .is__checked.active {
+          -webkit-transform: rotate(40deg);
+                  transform: rotate(40deg);
+          opacity: 1; }
+  #header__search .adults {
+    padding-left: 40px !important; }
+  #header__search .search__tabs {
+    position: absolute;
+    margin-top: 0 !important;
+    background: #145ca4;
+    padding-left: 0;
+    height: 40px; }
+    #header__search .search__tabs li {
+      display: inline-block;
+      float: left;
+      line-height: 40px;
+      list-style-type: none;
+      width: 70px;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 23px;
+      border-right: 1px solid #fff;
+      position: relative; }
+      #header__search .search__tabs li img {
+        width: 15px;
+        margin-right: 3px; }
+      #header__search .search__tabs li.active {
+        background: #1976d2; }
+      #header__search .search__tabs li a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; }
